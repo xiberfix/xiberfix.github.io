@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 
 export default function Error404() {
     return (<>
@@ -7,8 +6,7 @@ export default function Error404() {
             <title>Not Found</title>
         </Head>
 
-        <Link href='/'>Home</Link>
-        <div>
+        <div className='flex h-full w-full flex-col items-center justify-center'>
             <p>Not Found</p>
             <p>¯\_(ツ)_/¯</p>
         </div>

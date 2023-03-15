@@ -1,0 +1,16 @@
+# JetBrains IDEs
+/.idea
+
+
+# Package Managers
+/node_modules
+/.pnp
+.pnp.*
+
+/.yarn
+
+
+# Next.js
+/.next
+/out
+next-env.d.ts

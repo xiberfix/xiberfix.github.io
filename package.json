@@ -10,7 +10,8 @@
     "scripts": {
         "dev": "next dev",
         "start": "next start",
-        "build": "next build && next export"
+        "build": "next build && next export",
+        "format": "prettier --write ."
     },
     "dependencies": {
         "react": "^18.2.0",

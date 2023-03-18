@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import 'katex/dist/katex.min.css';
+@import 'code/code-light.css';
 
 html,
 body,

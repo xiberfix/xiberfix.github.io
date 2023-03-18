@@ -4,13 +4,14 @@ import remarkFrontmatter from 'remark-frontmatter'
 import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
+import rehypePrism from '@mapbox/rehype-prism'
 
 // MDX plugin
 const mdxConfig = {
     extension: /\.mdx?$/,
     options: {
         remarkPlugins: [remarkGfm, remarkFrontmatter, remarkMdxFrontmatter, remarkMath],
-        rehypePlugins: [rehypeKatex],
+        rehypePlugins: [rehypeKatex, rehypePrism],
     },
 }
 

@@ -1769,6 +1769,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"estree-util-value-to-estree@npm:^2.0.0":
+  version: 2.1.0
+  resolution: "estree-util-value-to-estree@npm:2.1.0"
+  dependencies:
+    "@types/estree": ^1.0.0
+    is-plain-obj: ^4.0.0
+  checksum: 6a930e9c8b85c27845ecca010b5b6b64d3b3a4e7d61117d8342fad7b2b595d7052c671616d1c2269e0954a200666834227ce0abb8488ded49700dfde54167ebb
+  languageName: node
+  linkType: hard
+
 "estree-util-visit@npm:^1.0.0":
   version: 1.2.1
   resolution: "estree-util-visit@npm:1.2.1"
@@ -1845,6 +1855,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fault@npm:^2.0.0":
+  version: 2.0.1
+  resolution: "fault@npm:2.0.1"
+  dependencies:
+    format: ^0.2.0
+  checksum: c9b30f47d95769177130a9409976a899ed31eb598450fbad5b0d39f2f5f56d5f4a9ff9257e0bee8407cb0fc3ce37165657888c6aa6d78472e403893104329b72
+  languageName: node
+  linkType: hard
+
 "file-entry-cache@npm:^6.0.1":
   version: 6.0.1
   resolution: "file-entry-cache@npm:6.0.1"
@@ -1896,6 +1915,13 @@ __metadata:
   dependencies:
     is-callable: ^1.1.3
   checksum: 6c48ff2bc63362319c65e2edca4a8e1e3483a2fabc72fbe7feaf8c73db94fc7861bd53bc02c8a66a0c1dd709da6b04eec42e0abdd6b40ce47305ae92a25e5d28
+  languageName: node
+  linkType: hard
+
+"format@npm:^0.2.0":
+  version: 0.2.2
+  resolution: "format@npm:0.2.2"
+  checksum: 646a60e1336250d802509cf24fb801e43bd4a70a07510c816fa133aa42cdbc9c21e66e9cc0801bb183c5b031c9d68be62e7fbb6877756e52357850f92aa28799
   languageName: node
   linkType: hard
 
@@ -2934,6 +2960,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mdast-util-frontmatter@npm:^1.0.0":
+  version: 1.0.1
+  resolution: "mdast-util-frontmatter@npm:1.0.1"
+  dependencies:
+    "@types/mdast": ^3.0.0
+    mdast-util-to-markdown: ^1.3.0
+    micromark-extension-frontmatter: ^1.0.0
+  checksum: 0b0552047b753931da8265f2231a0b79aad1309ad7ad6599181c2d264e9b70b61acf742f29bdf2de8e901eb6eb37dd42b6f66007e735fd8138b2bf4d9acb0118
+  languageName: node
+  linkType: hard
+
 "mdast-util-gfm-autolink-literal@npm:^1.0.0":
   version: 1.0.3
   resolution: "mdast-util-gfm-autolink-literal@npm:1.0.3"
@@ -3142,6 +3179,18 @@ __metadata:
     micromark-util-types: ^1.0.1
     uvu: ^0.5.0
   checksum: 4b483c46077f696ed310f6d709bb9547434c218ceb5c1220fde1707175f6f68b44da15ab8668f9c801e1a123210071e3af883a7d1215122c913fd626f122bfc2
+  languageName: node
+  linkType: hard
+
+"micromark-extension-frontmatter@npm:^1.0.0":
+  version: 1.0.1
+  resolution: "micromark-extension-frontmatter@npm:1.0.1"
+  dependencies:
+    fault: ^2.0.0
+    micromark-util-character: ^1.0.0
+    micromark-util-symbol: ^1.0.0
+    micromark-util-types: ^1.0.0
+  checksum: 813b9208b4d92a6e14b2dbb062d2d6ee3eb9e6ac306e7b2b99ad37d9b19a4543f3738fe3d91a12d896d39d75df5387ee84828bffce447f831ceddc6fa6aa00e2
   languageName: node
   linkType: hard
 
@@ -4406,6 +4455,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"remark-frontmatter@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "remark-frontmatter@npm:4.0.1"
+  dependencies:
+    "@types/mdast": ^3.0.0
+    mdast-util-frontmatter: ^1.0.0
+    micromark-extension-frontmatter: ^1.0.0
+    unified: ^10.0.0
+  checksum: c1c448923cd0239e9eeafb42d7129c05081c9a1bca4c8164b562cbb748e80d103bfd058597a48d54000ce3c776200ab8ccd64a9679d955423f07e4a4e77f10c3
+  languageName: node
+  linkType: hard
+
 "remark-gfm@npm:^3.0.1":
   version: 3.0.1
   resolution: "remark-gfm@npm:3.0.1"
@@ -4415,6 +4476,20 @@ __metadata:
     micromark-extension-gfm: ^2.0.0
     unified: ^10.0.0
   checksum: 02254f74d67b3419c2c9cf62d799ec35f6c6cd74db25c001361751991552a7ce86049a972107bff8122d85d15ae4a8d1a0618f3bc01a7df837af021ae9b2a04e
+  languageName: node
+  linkType: hard
+
+"remark-mdx-frontmatter@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "remark-mdx-frontmatter@npm:2.1.1"
+  dependencies:
+    "@types/mdast": ^3.0.0
+    estree-util-is-identifier-name: ^2.0.0
+    estree-util-value-to-estree: ^2.0.0
+    toml: ^3.0.0
+    unified: ^10.0.0
+    yaml: ^2.0.0
+  checksum: 079a06445476ed7ed31481d393de1efd2d2bc3597a7f1bae8f437529a9710cbb02984351a2617e0becd6c6f19ce64127a453f20aa2d9c8aa26704ad914673414
   languageName: node
   linkType: hard
 
@@ -4974,6 +5049,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"toml@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "toml@npm:3.0.0"
+  checksum: 5d7f1d8413ad7780e9bdecce8ea4c3f5130dd53b0a4f2e90b93340979a137739879d7b9ce2ce05c938b8cc828897fe9e95085197342a1377dd8850bf5125f15f
+  languageName: node
+  linkType: hard
+
 "trim-lines@npm:^3.0.0":
   version: 3.0.1
   resolution: "trim-lines@npm:3.0.1"
@@ -5364,7 +5446,9 @@ __metadata:
     prettier-plugin-tailwindcss: ^0.2.4
     react: ^18.2.0
     react-dom: ^18.2.0
+    remark-frontmatter: ^4.0.1
     remark-gfm: ^3.0.1
+    remark-mdx-frontmatter: ^2.1.1
     tailwindcss: ^3.2.7
     tailwindcss-debug-screens: ^2.2.1
     typescript: ^4.9.5
@@ -5389,6 +5473,13 @@ __metadata:
   version: 1.10.2
   resolution: "yaml@npm:1.10.2"
   checksum: ce4ada136e8a78a0b08dc10b4b900936912d15de59905b2bf415b4d33c63df1d555d23acb2a41b23cf9fb5da41c256441afca3d6509de7247daa062fd2c5ea5f
+  languageName: node
+  linkType: hard
+
+"yaml@npm:^2.0.0":
+  version: 2.2.1
+  resolution: "yaml@npm:2.2.1"
+  checksum: 84f68cbe462d5da4e7ded4a8bded949ffa912bc264472e5a684c3d45b22d8f73a3019963a32164023bdf3d83cfb6f5b58ff7b2b10ef5b717c630f40bd6369a23
   languageName: node
   linkType: hard
 

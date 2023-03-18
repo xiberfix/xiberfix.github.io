@@ -1,11 +1,13 @@
 import nextMDX from '@next/mdx'
 import remarkGfm from 'remark-gfm'
+import remarkFrontmatter from 'remark-frontmatter'
+import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 
 // MDX plugin
 const mdxConfig = {
     extension: /\.mdx?$/,
     options: {
-        remarkPlugins: [remarkGfm],
+        remarkPlugins: [remarkGfm, remarkFrontmatter, remarkMdxFrontmatter],
         rehypePlugins: [],
     },
 }

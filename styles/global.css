@@ -4,9 +4,3 @@
 
 @import 'katex/dist/katex.min.css';
 @import 'code/code-light.css';
-
-html,
-body,
-#__next {
-    @apply h-screen;
-}

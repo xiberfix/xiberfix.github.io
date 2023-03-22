@@ -1,0 +1,79 @@
+---
+title: 'Markdown Test... Post Title'
+date: '2026-05-01'
+---
+
+import TestComponent from '@components/TestComponent'
+import PostLayout from '@components/PostLayout'
+export default ({children}) => <PostLayout meta={meta}>{children}</PostLayout>
+
+# This is a heading level 1
+
+## This is a heading level 2
+
+### This is a heading level 3
+
+This is a paragraph. This is **bold text**, _italicized text_, ~~strikethrough text~~.
+
+This is a blockquote:
+
+> "Be the change that you wish to see in the world." - Mahatma Gandhi
+
+This is a code block:
+
+```js
+import PostLayout from '@components/PostLayout'
+export default ({children}) => (
+    <PostLayout title={title} date={date}>
+        {children}
+    </PostLayout>
+)
+```
+
+This is inline `code`.
+
+This is a math block:
+
+$$
+\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
+$$
+
+This is an interactive element (React.js component):
+
+<TestComponent />
+
+This is a table:
+
+| Name | Age | Gender |
+| ---- | --- | ------ |
+| John | 28  | Male   |
+| Jane | 32  | Female |
+| Bob  | 41  | Male   |
+
+This is an unordered list:
+
+-   Item 1
+-   Item 2
+-   Item 3
+
+This is an ordered list:
+
+1. Item 1
+2. Item 2
+3. Item 3
+
+This is a horizontal rule:
+
+---
+
+This is a link:
+
+[Google](https://www.google.com/)
+
+This is an image:
+
+![alt text](https://source.unsplash.com/9Fvs0WtqOnQ/w=600)
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sodales tortor eget lorem fringilla laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec aliquet lobortis tellus, eu finibus nibh lobortis in. Suspendisse potenti. In ut lacus tristique, cursus purus vel, eleifend nisl. Vivamus ut libero in enim sagittis rhoncus eget vel sapien. Sed auctor, lectus sed pellentesque congue, elit elit interdum metus, in vestibulum mauris metus ut magna. Aliquam sed metus mi. Etiam vitae massa ac nunc eleifend sagittis sed in nulla.
+
+Nullam eget libero vel eros blandit ornare at quis enim. Donec vehicula nibh sed augue posuere, in tincidunt turpis convallis. Nunc id orci ut nunc laoreet accumsan. Aenean luctus bibendum tortor, in consectetur justo finibus eget. Duis sit amet dolor et magna consequat suscipit. Donec pretium felis non ante malesuada, in bibendum tortor pharetra. In hac habitasse platea dictumst. Etiam molestie massa sit amet nisl aliquam elementum. Nam vulputate mauris vel dui fringilla, a lacinia magna eleifend. Quisque congue quam nec suscipit sodales. Fusce placerat risus nec massa fringilla imperdiet. Sed vestibulum orci vel erat consectetur, id efficitur magna suscipit. Suspendisse auctor dapibus purus, eget efficitur arcu vehicula vitae. Sed sed ultricies risus.

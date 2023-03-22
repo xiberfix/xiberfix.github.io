@@ -4,3 +4,7 @@
 
 @import 'katex/dist/katex.min.css';
 @import 'code/code-light.css';
+
+#__next {
+    @apply h-full relative;
+}

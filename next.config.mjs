@@ -10,7 +10,7 @@ import rehypePrism from '@mapbox/rehype-prism'
 const mdxConfig = {
     extension: /\.mdx?$/,
     options: {
-        remarkPlugins: [remarkGfm, remarkFrontmatter, remarkMdxFrontmatter, remarkMath],
+        remarkPlugins: [remarkGfm, remarkFrontmatter, [remarkMdxFrontmatter, {name: 'meta'}], remarkMath],
         rehypePlugins: [rehypeKatex, rehypePrism],
     },
 }

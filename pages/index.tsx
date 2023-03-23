@@ -1,9 +1,15 @@
+import Head from 'next/head'
 import Layout from '@components/Layout'
 
 export default function Home() {
     return (
-        <Layout>
-            <p>Hello!</p>
-        </Layout>
+        <>
+            <Head>
+                <title>xiberfix.dev</title>
+            </Head>
+            <Layout>
+                <p>Hello!</p>
+            </Layout>
+        </>
     )
 }

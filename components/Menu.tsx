@@ -5,15 +5,17 @@ import {PropsWithChildren} from 'react'
 
 export default function Menu() {
     return (
-        <div className='flex flex-row gap-4 h-10'>
+        <div className='flex h-10 flex-row gap-4'>
             {/* Start */}
-            <div className='flex-1 flex flex-row items-center justify-start' />
+            <div className='flex flex-1 flex-row items-center justify-start' />
 
             {/* Center */}
             <div
                 className='
                     flex flex-row items-center justify-center px-3 rounded-full
-                    shadow-lg shadow-slate-800/5 ring-1 ring-slate-900/5'
+                    shadow-lg ring-1
+                    shadow-slate-800/10 ring-slate-900/10
+                    dark:shadow-slate-200/10 dark:ring-slate-100/10'
             >
                 <ActiveLink href='/posts'>Posts</ActiveLink>
                 <ActiveLink href='/projects'>Projects</ActiveLink>
@@ -21,7 +23,7 @@ export default function Menu() {
             </div>
 
             {/* End */}
-            <div className='flex-1 flex flex-row items-center justify-end' />
+            <div className='flex flex-1 flex-row items-center justify-end' />
         </div>
     )
 }
@@ -37,7 +39,10 @@ function ActiveLink({href, children}: PropsWithChildren<ActiveLinkProps>) {
     return (
         <Link
             href={href}
-            className={clsx('text-sm px-3 py-2 hover:text-slate-700', active ? 'text-slate-700' : 'text-slate-400')}
+            className={clsx(
+                'text-sm px-3 py-2 hover:text-slate-700 hover:dark:text-slate-50',
+                active ? 'text-slate-700 dark:text-slate-50' : 'text-slate-400 dark:text-slate-400',
+            )}
         >
             {children}
         </Link>

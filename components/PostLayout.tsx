@@ -20,8 +20,8 @@ export default function PostLayout({meta, children}: PropsWithChildren<PostLayou
                 <title>{title} | xiberfix.dev</title>
             </Head>
             <Layout>
-                <h1 className='text-4xl font-bold text-slate-800 sm:text-5xl'>{title}</h1>
-                <article className='my-10 prose prose-sm sm:prose-base sm:my-16'>{children}</article>
+                <h1 className='text-4xl font-bold text-slate-800 dark:text-white sm:text-5xl'>{title}</h1>
+                <article className='my-10 prose prose-sm dark:prose-invert sm:prose-base sm:my-16'>{children}</article>
                 <time className='text-sm text-slate-400 sm:text-base'>{DATE_FORMAT.format(new Date(date))}</time>
             </Layout>
         </>

@@ -6,11 +6,16 @@ export default function Layout({children}: PropsWithChildren<{}>) {
         <>
             {/* Back */}
             <div className='fixed inset-0'>
-                <div className='mx-auto h-full w-full max-w-4xl bg-white ring-1 ring-slate-200' />
+                <div
+                    className='
+                        mx-auto h-full w-full max-w-4xl ring-1
+                        bg-white ring-slate-400/25
+                        dark:bg-slate-900 dark:ring-slate-400/25'
+                />
             </div>
             {/* Front */}
             <div className='relative mx-auto h-full w-full max-w-4xl'>
-                <div className='w-full max-w-prose mx-auto flex flex-col gap-10 p-3 pb-10 sm:gap-20 sm:p-6 sm:pb-20'>
+                <div className='mx-auto flex w-full max-w-prose flex-col gap-10 p-3 pb-10 sm:gap-20 sm:p-6 sm:pb-20'>
                     <header>
                         <Menu />
                     </header>

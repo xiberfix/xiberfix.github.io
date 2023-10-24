@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/usr/bin/env fish
 . "$(dirname -- "$0")/_/husky.sh"
 
-yarn build && yarn format
+pnpm build && pnpm format

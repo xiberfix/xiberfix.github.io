@@ -53,5 +53,5 @@
     "tailwindcss-debug-screens": "^2.2.1",
     "typescript": "^4.9.5"
   },
-  "packageManager": "yarn@3.4.1"
+  "packageManager": "pnpm@8.9.2"
 }

@@ -4,10 +4,6 @@
 
 # Package Managers
 /node_modules
-/.pnp
-.pnp.*
-
-/.yarn
 
 
 # Next.js

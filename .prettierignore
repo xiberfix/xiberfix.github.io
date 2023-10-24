@@ -4,6 +4,7 @@
 
 # Package Managers
 /node_modules
+pnpm-lock.yaml
 
 
 # Next.js
